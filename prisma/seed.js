@@ -1,8 +1,6 @@
 const { PrismaClient } = require('@prisma/client');
 const prisma = new PrismaClient();
 
-
-
 const main = async () => {
   //Create Trains
   const train1 = await prisma.train.create({
